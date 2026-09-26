@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="description" content="PANEL SANGKURIANG — solusi energi surya untuk rumah, usaha, industri, dan peluang investasi.">
+<meta name="theme-color" content="#06111f">
+<title>PANEL SANGKURIANG | Solar Energy & Investment</title>
+<style>
+:root{
+ --navy:#06111f;--navy2:#0a1c31;--blue:#1266d6;--cyan:#35d8ff;
+ --gold:#ffc928;--green:#22c879;--white:#f7fbff;--muted:#9fb1c7;
+ --line:rgba(255,255,255,.1);--card:rgba(255,255,255,.055);
+ --shadow:0 24px 80px rgba(0,0,0,.3)
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,Segoe UI,Arial,sans-serif;background:var(--navy);color:var(--white);line-height:1.65}
+a{text-decoration:none;color:inherit}
+img{max-width:100%;display:block}
+.container{width:min(1180px,92%);margin:auto}
+.nav{position:sticky;top:0;z-index:100;background:rgba(6,17,31,.84);backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}
+.navin{height:76px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-weight:950;letter-spacing:.8px;font-size:18px}.logo b{color:var(--gold)}
+.links{display:flex;gap:25px;color:#c3d0df;font-size:14px}.links a:hover{color:#fff}
+.navcta{padding:10px 15px;border:1px solid rgba(255,201,40,.4);border-radius:10px;color:var(--gold);font-weight:800;font-size:13px}
+.hero{padding:74px 0 60px;background:
+ radial-gradient(circle at 85% 20%,rgba(53,216,255,.12),transparent 30%),
+ linear-gradient(180deg,#07192c,#06111f)}
+.heroGrid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+.badge{display:inline-flex;align-items:center;gap:8px;border:1px solid rgba(53,216,255,.25);background:rgba(53,216,255,.07);padding:7px 12px;border-radius:999px;color:#a9eaff;font-size:11px;font-weight:900;letter-spacing:1.2px;margin-bottom:18px}
+.badge i{width:7px;height:7px;background:var(--green);border-radius:50%;box-shadow:0 0 12px var(--green)}
+h1{font-size:clamp(43px,6vw,72px);line-height:1.02;letter-spacing:-3px;margin-bottom:19px}
+.grad{background:linear-gradient(90deg,#fff,#9fd9ff,#ffc928);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p{font-size:17px;color:var(--muted);max-width:650px;margin-bottom:27px}
+.actions{display:flex;gap:11px;flex-wrap:wrap}
+.btn{padding:13px 18px;border-radius:11px;border:1px solid var(--line);font-size:14px;font-weight:900;display:inline-flex;align-items:center;gap:8px;transition:.2s}
+.btn:hover{transform:translateY(-2px)}.primary{background:#fff;color:#07111f}.gold{background:var(--gold);color:#07111f;border-color:var(--gold)}.green{background:#20bf73;color:#fff;border-color:#20bf73}.ghost{background:rgba(255,255,255,.04)}
+.heroImage{border-radius:25px;overflow:hidden;border:1px solid rgba(255,255,255,.13);box-shadow:var(--shadow);background:#fff}
+.heroImage img{width:100%;height:auto}
+.trust{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:#08182a}
+.trustGrid{display:grid;grid-template-columns:repeat(4,1fr);padding:19px 0;gap:10px}
+.trustItem{text-align:center;color:#c5d1df;font-size:13px;font-weight:750}.trustItem strong{display:block;color:#fff;font-size:17px}
+section{padding:85px 0}.dark2{background:#071625}.light{background:#f4f8fc;color:#081526}
+.head{text-align:center;max-width:760px;margin:0 auto 42px}.eyebrow{color:var(--cyan);font-size:11px;font-weight:950;letter-spacing:1.7px;text-transform:uppercase}
+.head h2{font-size:39px;line-height:1.1;margin:8px 0 11px;letter-spacing:-1px}.head p{color:var(--muted)}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:25px;box-shadow:0 12px 45px rgba(0,0,0,.12)}
+.light .card{background:#fff;border-color:#dfe8f1;box-shadow:0 15px 40px rgba(10,35,65,.08)}
+.icon{width:48px;height:48px;border-radius:13px;display:grid;place-items:center;background:rgba(53,216,255,.1);border:1px solid rgba(53,216,255,.16);font-size:22px;margin-bottom:17px}
+.card h3{font-size:19px;margin-bottom:7px}.card p{color:var(--muted);font-size:14px}
+.productGrid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.product{overflow:hidden;padding:0}.product img{width:100%;height:180px;object-fit:cover;background:#fff}.productBody{padding:21px}.price{font-size:25px;font-weight:950;color:#ffc928;margin:10px 0 15px}.small{font-size:11px;color:var(--muted);font-weight:500}
+.list{list-style:none;display:grid;gap:7px;color:#c5d1df;font-size:13px;margin-bottom:19px}.list li:before{content:"✓";color:var(--green);font-weight:900;margin-right:7px}
+.invest{display:grid;grid-template-columns:1fr 1fr;gap:22px;align-items:stretch}
+.investBox{border:1px solid rgba(255,201,40,.18);background:linear-gradient(145deg,rgba(255,201,40,.09),rgba(255,255,255,.025));border-radius:24px;padding:34px}
+.investBox h3{font-size:27px;margin-bottom:10px}.investBox p{color:var(--muted);font-size:14px}
+.investList{display:grid;gap:12px;margin-top:20px;list-style:none}.investList li{display:flex;gap:10px;color:#d4deeb;font-size:14px}.num{width:28px;height:28px;border-radius:50%;display:grid;place-items:center;background:rgba(255,201,40,.14);color:var(--gold);font-weight:900;flex:0 0 28px}
+.note{margin-top:15px;color:#8192a8;font-size:11px}
+.timeline{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.step{position:relative}.step b{display:block;color:var(--gold);font-size:12px;margin-bottom:8px}.step h3{font-size:17px;margin-bottom:5px}.step p{color:var(--muted);font-size:13px}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;margin-top:24px}.stat{padding:20px;text-align:center;border:1px solid var(--line);border-radius:16px;background:rgba(255,255,255,.03)}.stat strong{display:block;font-size:27px;color:#fff}.stat span{font-size:11px;color:var(--muted)}
+.faq{max-width:850px;margin:auto;display:grid;gap:10px}details{border:1px solid var(--line);border-radius:14px;padding:16px 18px;background:rgba(255,255,255,.03)}summary{cursor:pointer;font-weight:850}details p{color:var(--muted);font-size:14px;padding-top:9px}
+.cta{border:1px solid rgba(53,216,255,.18);border-radius:28px;padding:48px;text-align:center;background:linear-gradient(135deg,rgba(18,102,214,.18),rgba(255,201,40,.06))}
+.cta h2{font-size:42px;line-height:1.1;margin:7px 0 11px}.cta p{max-width:680px;margin:auto auto 22px;color:var(--muted)}
+footer{border-top:1px solid var(--line);padding:30px 0;color:#7f91a8;font-size:12px}.footerin{display:flex;justify-content:space-between;gap:20px}
+@media(max-width:850px){
+ .links{display:none}.heroGrid,.invest{grid-template-columns:1fr}.hero{padding-top:52px}.cards,.productGrid{grid-template-columns:1fr}.timeline{grid-template-columns:1fr 1fr}.trustGrid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:520px){
+ h1{font-size:45px}.hero p{font-size:15px}.timeline{grid-template-columns:1fr}.stats{grid-template-columns:1fr}.cta{padding:32px 20px}.cta h2{font-size:32px}.footerin{flex-direction:column;text-align:center}
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+ <div class="container navin">
+  <a class="logo" href="#home">PANEL <b>SANGKURIANG</b></a>
+  <div class="links">
+   <a href="#produk">Produk</a><a href="#keunggulan">Keunggulan</a><a href="#investor">Investor</a><a href="#proses">Proses</a><a href="#kontak">Kontak</a>
+  </div>
+  <a class="navcta" href="#investor">Untuk Investor</a>
+ </div>
+</nav>
+
+<header class="hero" id="home">
+ <div class="container heroGrid">
+  <div>
+   <div class="badge"><i></i> SOLAR ENERGY • BUSINESS & INVESTMENT</div>
+   <h1>Energi surya untuk <span class="grad">masa depan.</span></h1>
+   <p>PANEL SANGKURIANG menghadirkan solusi panel surya untuk rumah, usaha, dan industri dengan katalog produk yang jelas, layanan profesional, serta peluang pengembangan bisnis energi terbarukan.</p>
+   <div class="actions">
+    <a class="btn gold" href="#produk">Lihat Produk →</a>
+    <a class="btn green" target="_blank" href="https://wa.me/6281216007941?text=Halo%20PANEL%20SANGKURIANG%2C%20saya%20ingin%20konsultasi%20panel%20surya.">💬 Konsultasi WhatsApp</a>
+   </div>
+  </div>
+  <div class="heroImage"><img src="panel-surya.png" alt="Katalog Panel Surya PANEL SANGKURIANG"></div>
+ </div>
+</header>
+
+<div class="trust">
+ <div class="container trustGrid">
+  <div class="trustItem"><strong>Rumah</strong>Solusi energi mandiri</div>
+  <div class="trustItem"><strong>Usaha</strong>Efisiensi operasional</div>
+  <div class="trustItem"><strong>Industri</strong>Skala kebutuhan besar</div>
+  <div class="trustItem"><strong>Indonesia</strong>Siap melayani konsultasi</div>
+ </div>
+</div>
+
+<section id="keunggulan">
+ <div class="container">
+  <div class="head"><div class="eyebrow">Keunggulan</div><h2>Fondasi bisnis yang jelas.</h2><p>Website ini dirancang seperti profil perusahaan modern agar calon pelanggan dan calon mitra dapat memahami produk, proses, dan arah bisnis dengan cepat.</p></div>
+  <div class="cards">
+   <article class="card"><div class="icon">☀️</div><h3>Energi Terbarukan</h3><p>Panel surya memanfaatkan energi matahari sebagai sumber energi terbarukan untuk berbagai kebutuhan.</p></article>
+   <article class="card"><div class="icon">🏠</div><h3>Beragam Segmen</h3><p>Solusi dapat diarahkan untuk rumah, toko, usaha, fasilitas, hingga kebutuhan industri sesuai spesifikasi.</p></article>
+   <article class="card"><div class="icon">🛠️</div><h3>Layanan End-to-End</h3><p>Konsultasi, pemilihan komponen, perencanaan, dan komunikasi pemesanan dapat dilakukan melalui satu kanal.</p></article>
+  </div>
+ </div>
+</section>
+
+<section class="dark2" id="produk">
+ <div class="container">
+  <div class="head"><div class="eyebrow">Katalog</div><h2>Produk & paket pilihan.</h2><p>Harga yang tampil mengikuti materi katalog yang kamu berikan. Konfirmasi stok, spesifikasi, dan harga terbaru sebelum transaksi.</p></div>
+  <div class="productGrid">
+   <article class="card product"><img src="panel-surya.png" alt="Panel Surya 100 WP"><div class="productBody"><h3>Panel Surya 100 WP</h3><div class="price">Rp1.250.000 <span class="small">/ unit</span></div><ul class="list"><li>Daya 100 Watt</li><li>Tegangan 18V</li><li>Dimensi 1020 × 670 × 30 mm</li><li>Berat 7,5 kg</li></ul><a class="btn green" target="_blank" href="https://wa.me/6281216007941?text=Halo%2C%20saya%20tertarik%20Panel%20Surya%20100%20WP%20Rp1.250.000.">Tanya Produk</a></div></article>
+   <article class="card product"><img src="panel-surya.png" alt="Panel Surya 200 WP"><div class="productBody"><h3>Panel Surya 200 WP</h3><div class="price">Rp2.350.000 <span class="small">/ unit</span></div><ul class="list"><li>Daya 200 Watt</li><li>Tegangan 36V</li><li>Dimensi 1480 × 670 × 35 mm</li><li>Berat 12 kg</li></ul><a class="btn green" target="_blank" href="https://wa.me/6281216007941?text=Halo%2C%20saya%20tertarik%20Panel%20Surya%20200%20WP%20Rp2.350.000.">Tanya Produk</a></div></article>
+   <article class="card product"><img src="panel-surya.png" alt="Panel Surya 330 WP"><div class="productBody"><h3>Panel Surya 330 WP</h3><div class="price">Rp3.850.000 <span class="small">/ unit</span></div><ul class="list"><li>Daya 330 Watt</li><li>Tegangan 36V</li><li>Dimensi 1755 × 1038 × 35 mm</li><li>Berat 18 kg</li></ul><a class="btn green" target="_blank" href="https://wa.me/6281216007941?text=Halo%2C%20saya%20tertarik%20Panel%20Surya%20330%20WP%20Rp3.850.000.">Tanya Produk</a></div></article>
+   <article class="card product"><img src="panel-surya.png" alt="Inverter Hybrid 1KVA"><div class="productBody"><h3>Inverter Hybrid 1KVA</h3><div class="price">Rp4.500.000 <span class="small">/ unit</span></div><ul class="list"><li>Daya 1000 Watt</li><li>Input 12V / 24V</li><li>Output 220V</li><li>MPPT 50A</li></ul><a class="btn green" target="_blank" href="https://wa.me/6281216007941?text=Halo%2C%20saya%20tertarik%20Inverter%20Hybrid%201KVA%20Rp4.500.000.">Tanya Produk</a></div></article>
+   <article class="card product"><img src="panel-surya.png" alt="Baterai LiFePO4 100Ah"><div class="productBody"><h3>Baterai LiFePO4 100Ah</h3><div class="price">Rp3.200.000 <span class="small">/ unit</span></div><ul class="list"><li>Kapasitas 100Ah</li><li>Tegangan 12.8V</li><li>Siklus hidup > 6000 kali</li><li>Berat 12 kg</li></ul><a class="btn green" target="_blank" href="https://wa.me/6281216007941?text=Halo%2C%20saya%20tertarik%20Baterai%20LiFePO4%20100Ah%20Rp3.200.000.">Tanya Produk</a></div></article>
+   <article class="card product"><img src="panel-surya.png" alt="Paket PLTS Rumah 900W"><div class="productBody"><h3>Paket PLTS Rumah 900W</h3><div class="price">Rp12.500.000 <span class="small">/ paket</span></div><ul class="list"><li>Panel 330W × 3 (990W)</li><li>Inverter Hybrid 1KVA</li><li>Baterai 100Ah × 1</li><li>Aksesori & instalasi</li></ul><a class="btn green" target="_blank" href="https://wa.me/6281216007941?text=Halo%2C%20saya%20tertarik%20Paket%20PLTS%20Rumah%20900W%20Rp12.500.000.">Tanya Produk</a></div></article>
+  </div>
+ </div>
+</section>
+
+<section id="investor">
+ <div class="container">
+  <div class="head"><div class="eyebrow">Investor & Mitra</div><h2>Bangun peluang di sektor energi.</h2><p>Bagian ini ditujukan untuk calon investor dan mitra yang ingin memahami model pengembangan bisnis tanpa klaim imbal hasil yang belum diverifikasi.</p></div>
+  <div class="invest">
+   <div class="investBox">
+    <h3>Kenapa sektor ini menarik?</h3>
+    <p>Permintaan solusi energi dapat datang dari rumah tangga, UMKM, fasilitas komersial, dan kebutuhan industri. Pengembangan bisnis dapat difokuskan pada penjualan produk, proyek instalasi, layanan purna jual, dan kemitraan.</p>
+    <ul class="investList">
+     <li><span class="num">1</span><span><b>Produk nyata</b><br>Portofolio perangkat dapat ditampilkan dengan spesifikasi dan harga yang transparan.</span></li>
+     <li><span class="num">2</span><span><b>Pasar beragam</b><br>Target pelanggan dapat dibagi berdasarkan kebutuhan rumah, usaha, dan industri.</span></li>
+     <li><span class="num">3</span><span><b>Dapat dikembangkan</b><br>Model bisnis dapat diperluas melalui proyek, reseller, instalasi, dan layanan.</span></li>
+    </ul>
+   </div>
+   <div class="investBox">
+    <h3>Informasi untuk calon mitra</h3>
+    <p>Kami terbuka untuk pembahasan kerja sama. Detail legalitas, struktur usaha, proyeksi keuangan, kebutuhan modal, dan penggunaan dana perlu dibahas berdasarkan dokumen bisnis yang sebenarnya.</p>
+    <div class="stats">
+     <div class="stat"><strong>01</strong><span>Produk & solusi</span></div>
+     <div class="stat"><strong>02</strong><span>Model kemitraan</span></div>
+     <div class="stat"><strong>03</strong><span>Rencana ekspansi</span></div>
+    </div>
+    <div class="note">Catatan: halaman ini tidak menjanjikan keuntungan investasi. Calon investor perlu melakukan due diligence dan meminta dokumen pendukung sebelum mengambil keputusan.</div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section class="dark2" id="proses">
+ <div class="container">
+  <div class="head"><div class="eyebrow">Cara kerja</div><h2>Dari konsultasi sampai solusi.</h2><p>Alur sederhana untuk calon pelanggan maupun mitra.</p></div>
+  <div class="timeline">
+   <div class="step"><b>01 — KONSULTASI</b><h3>Kenali kebutuhan</h3><p>Diskusikan kebutuhan daya, lokasi, dan tujuan penggunaan.</p></div>
+   <div class="step"><b>02 — PERENCANAAN</b><h3>Pilih sistem</h3><p>Tentukan panel, inverter, baterai, dan komponen sesuai kebutuhan.</p></div>
+   <div class="step"><b>03 — PENAWARAN</b><h3>Konfirmasi biaya</h3><p>Spesifikasi, stok, harga, dan lingkup pekerjaan dikonfirmasi.</p></div>
+   <div class="step"><b>04 — PELAKSANAAN</b><h3>Realisasikan</h3><p>Pengiriman dan instalasi dilakukan sesuai kesepakatan.</p></div>
+  </div>
+ </div>
+</section>
+
+<section>
+ <div class="container">
+  <div class="head"><div class="eyebrow">FAQ</div><h2>Pertanyaan umum.</h2></div>
+  <div class="faq">
+   <details open><summary>Apakah harga di website adalah harga final?</summary><p>Harga pada katalog mengikuti materi yang diberikan dan sebaiknya dikonfirmasi kembali untuk stok, ongkos kirim, spesifikasi, dan instalasi.</p></details>
+   <details><summary>Apakah tersedia kerja sama investor?</summary><p>Website ini menyediakan kanal untuk pembicaraan dengan calon investor atau mitra. Detail struktur kerja sama harus dibahas berdasarkan dokumen bisnis dan kondisi aktual perusahaan.</p></details>
+   <details><summary>Bagaimana cara mendapatkan konsultasi?</summary><p>Tekan tombol WhatsApp. Pesan otomatis akan terbuka ke nomor 0812-1600-7941.</p></details>
+  </div>
+ </div>
+</section>
+
+<section id="kontak">
+ <div class="container">
+  <div class="cta">
+   <div class="eyebrow">Hubungi kami</div>
+   <h2>Siap membahas energi masa depan?</h2>
+   <p>Untuk pemesanan, konsultasi, kerja sama, atau pembicaraan dengan calon mitra, hubungi PANEL SANGKURIANG.</p>
+   <div class="actions" style="justify-content:center">
+    <a class="btn green" target="_blank" href="https://wa.me/6281216007941?text=Halo%20PANEL%20SANGKURIANG%2C%20saya%20ingin%20konsultasi%20atau%20membahas%20kerja%20sama.">💬 0812-1600-7941</a>
+    <a class="btn ghost" href="#produk">Lihat Katalog</a>
+   </div>
+  </div>
+ </div>
+</section>
+
+<footer>
+ <div class="container footerin">
+  <div>© <span id="year"></span> PANEL SANGKURIANG. Website profil bisnis energi surya.</div>
+  <div>Bungberuh II, Kec. Kadur, Kab. Pamekasan, Jawa Timur</div>
+ </div>
+</footer>
+<script>document.getElementById("year").textContent=new Date().getFullYear();</script>
+</body>
+</html>
